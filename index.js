@@ -32,7 +32,7 @@ app.get('/faturar', function(req, res) {
 	    'cpf_cliente' :  dados.seguradoCpf,
 	    'valor' : 10.50,
 	    'vencimento' : "12/30/2019",
-	    'texto' : ' Uso servico personal de 67% \n Uso buiseness 33%',
+	    'texto' : '-Uso servico personal de 67% \n Uso buiseness 33%',
 	    'logo_url' : logo
 	}).then((boleto) => {
 		res.redirect( boleto.linkBoleto );
