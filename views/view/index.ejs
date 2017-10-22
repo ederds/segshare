@@ -9,48 +9,53 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
-<body class="container">
+<body>
 
 <header>
-    
+    <nav>
+        <div class="nav-wrapper">
+          <a href="/index" class="brand-logo">SegShare</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/faturar">Faturar</a></li>
+          </ul>
+        </div>
+      </nav>
 </header>
 
-<main>
-
-    <body>
-      <div class="container">
-        <div class="row">
-          <div class="col s6">
-            <div class="card">
-                <div class="card-image">
-                  <img src="http://lorempixel.com/403/302/technics">
-                  <span class="card-title">Cadastrar</span>
-                </div>
-                <div class="card-content">
-                  <p>Atualiza os dados das corridas dos motoristas utilizando a API do Uber e salva no blockchain.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/cadastrar">Cadastrar</a>
-                </div>
-              </div>
+<main class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+              <img src="http://fpoimg.com/403x302?text=Cadastrar">
+              <span class="card-title">Cadastrar</span>
+            </div>
+            <div class="card-content">
+              <p>Atualiza os dados das corridas dos motoristas utilizando a API do Uber e salva no blockchain.</p>
+            </div>
+            <div class="card-action">
+              <a href="/cadastrar">Cadastrar</a>
+            </div>
           </div>
-          <div class="col s6">
-            <div class="card">
-                <div class="card-image">
-                  <img src="http://lorempixel.com/403/302/technics">
-                  <span class="card-title">Faturar</span>
-                </div>
-                <div class="card-content">
-                  <p>Irá gerar um boleto utilizando API do PJBank com os dados consolidados do seguro.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/faturar">Faturar</a>
-                </div>
-              </div>
-          </div>
-        </div>
       </div>
-    </body>
+      <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+              <img src="http://fpoimg.com/403x302?text=Faturar">
+              <span class="card-title">Faturar</span>
+            </div>
+            <div class="card-content">
+              <p>Irá gerar um boleto utilizando API do PJBank com os dados consolidados do seguro.</p>
+            </div>
+            <div class="card-action">
+              <a href="/faturar">Faturar</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 </body>

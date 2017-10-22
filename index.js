@@ -21,7 +21,10 @@ app.listen(3000, function () {
 
 app.get('/cadastrar', function(req, res) {
 	seguros.cadastrar();
-	res.send("cadastrar")
+	res.render('view/cadastrar');
+	$(document).ready(function(){
+		$('.collapsible').collapsible();
+	  });
 })
 
 app.get('/faturar', function(req, res) {
@@ -30,9 +33,9 @@ app.get('/faturar', function(req, res) {
 	PJBank.boleto({
 	    'nome_cliente' : dados.seguradoNome,
 	    'cpf_cliente' :  dados.seguradoCpf,
-	    'valor' : 10.50,
+	    'valor' : 135.25,
 	    'vencimento' : "12/30/2019",
-	    'texto' : '-Uso servico personal de 67% \n Uso buiseness 33%',
+	    'texto' : '-Uso servico personal de 91% \n Uso buiseness 9%',
 	    'logo_url' : logo
 	}).then((boleto) => {
 		res.redirect( boleto.linkBoleto );
